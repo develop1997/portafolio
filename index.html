@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Santiago Hoyos A.</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/perfil.jpg" alt="" />
+        </div>
+        <h1>SANTIAGO</h1>
+        <h2>Ingeniero de Sistemas - Experto en ADSO</h2>
+        <div class="redes">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/santiagosneyder.hoyosaraque?mibextid=LQQJ4d"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a target="_blank" href="https://wa.me/message/E5H34HRQUJPOM1"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://instagram.com/santiagosneyderhoyos?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/santiago-sneyder-hoyos-araque-6785b71b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->s
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre mí</h2>
+        <p>
+          <span>Hola, soy Santiago.</span> Actualmente Tecnólogo en Contabilidad
+          y Finanzas, Profesional en Administración de Empresas, estudiante de
+          Ingeniería de Sistemas y Análisis y Desarrollo de Software. Soy un
+          excelente apoyo en cualquier proceso, así como también capaz liderar
+          el mismo. Soy una persona responsable y comprometida, destacando mi
+          creatividad y buena energía.
+        </p>
+
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                09-02-1997
+              </li>
+              <li>
+                <strong>Teléfono</strong>
+                301 538 3935
+              </li>
+              <li>
+                <strong>Email</strong>
+                colombia.develop@gmail.com
+              </li>
+              <li>
+                <strong>Website</strong>
+                www.example.com
+              </li>
+              <li>
+                <strong>Dirección</strong>
+                Carrera 49 #53-46 Bello, Antioquia
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                <span>FREELANCE</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-brands fa-apple"></i>
+                <span>APPLE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-person-hiking"></i>
+                <span>DEPORTE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-book"></i>
+                <span>LIBROS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>AUTOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-camera"></i>
+                <span>FOTOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="downloadButton">
+          <a href="/pdf/HOJA DE VIDA SANTIAGO.pdf" download style="color: white"
+            >Descargar CV</a
+          >
+          <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Habilidades</h2>
+        <div class="fila">
+          <!-- Technical Skill -->
+          <div class="col">
+            <h3>Habilidades técnicas</h3>
+            <div class="skill">
+              <span>React & Node JS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Python</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>GitHub</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>65%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>AWS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>20%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Kotlin (APPS)</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Professional Skills -->
+          <div class="col">
+            <h3>Habilidades profesionales</h3>
+            <div class="skill">
+              <span>Liderazgo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Responsabilidad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>99%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Honestidad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>99%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Ingeniería de Sistemas</h4>
+              <span class="casa">Universidad Católica Luis Amigó</span>
+              <span class="fecha">Actualmente</span>
+              <p>Estudiante de 7mo. Semestre de Ingeniería de Sistemas.</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Tecnólogo en Análisis y Desarrollo de Software</h4>
+              <span class="casa">SENA</span>
+              <span class="fecha">Actualmente</span>
+              <p>
+                Estudiante de 7mo. Trimestre en Análisis y Desarrollo de
+                Software (ADSO).
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Administración de Empresas</h4>
+              <span class="casa">Fundación Universiaria del Area Andina</span>
+              <span class="fecha">2023</span>
+              <p>
+                Profesional en Adminustracón de Empresas, con capacidad
+                suficiente y necesario para emplearse en el cualquier campo
+                laboral de exigencia y su vez ser un co-impulso del conocimiento
+                en desarrollo de sistemas de información.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Tecnólogo en Contabilidad y Finanzas</h4>
+              <span class="casa">SENA</span>
+              <span class="fecha">2019</span>
+              <p>
+                Tecnología en el SENA cursada con el fin de aprender acerca de
+                la contabilidad y las finanzas a nivel general y posteriormente
+                llevar a emplearla en la vida laboral.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia de trabajo</h3>
+
+            <div class="item der">
+              <h4>Administrador</h4>
+              <span class="casa">Centro Recreativo Villa Elena</span>
+              <span class="fecha">2016 - 2020</span>
+              <p>
+                Encargado del personal y recursos, análisis de estados
+                financieros, mercadeo y ventas, convenios mercantiles, gestión
+                de licitaciones, elaboración de proyectos para entidades
+                públicas y privadas.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+
+            <div class="item der">
+              <h4>Auxiliar contable y logístico</h4>
+              <span class="casa">Repares SA</span>
+              <span class="fecha">2020 - 2021</span>
+              <p>
+                Elaboración de informe de fletes para gerencia, coordinación y
+                supervisión de logística de transporte, índices de rentabilidad,
+                optimización de procesos y gestor de aprovechamiento de los
+                recursos, labores varias en contabilidad y administración
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTAFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <a
+              href="https://www.figma.com/proto/Cyqn4z7Fy8rg16Hpbtihvp/Luis-Amigo"
+              target="_blank"
+            >
+              <img src="img/p3.jpg" alt="" />
+            </a>
+            <div class="overlay">
+              <h3>Veterinaria APP</h3>
+              <p>Figma</p>
+              <a
+                href="https://www.figma.com/proto/Cyqn4z7Fy8rg16Hpbtihvp/Luis-Amigo"
+                target="_blank"
+                class="boton-imagen"
+                >Ver más</a
+              >
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <a
+              href="https://www.figma.com/proto/Cyqn4z7Fy8rg16Hpbtihvp/Luis-Amigo"
+              target="_blank"
+            >
+              <img src="img/p5.jpg" alt="" />
+            </a>
+            <div class="overlay">
+              <h3>Proyecto</h3>
+              <p>Tipo de proyecto</p>
+              <a
+                href="https://www.figma.com/proto/Cyqn4z7Fy8rg16Hpbtihvp/Luis-Amigo"
+                target="_blank"
+                class="boton-imagen"
+                >Ver más</a
+              >
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <a
+              href="https://www.figma.com/proto/Cyqn4z7Fy8rg16Hpbtihvp/Luis-Amigo"
+              target="_blank"
+            >
+              <img src="img/p5.jpg" alt="" />
+            </a>
+            <div class="overlay">
+              <h3>Proyecto</h3>
+              <p>Tipo de proyecto</p>
+              <a
+                href="https://www.figma.com/proto/Cyqn4z7Fy8rg16Hpbtihvp/Luis-Amigo"
+                target="_blank"
+                class="boton-imagen"
+                >Ver más</a
+              >
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <a
+              href="https://www.figma.com/proto/Cyqn4z7Fy8rg16Hpbtihvp/Luis-Amigo"
+              target="_blank"
+            >
+              <img src="img/p5.jpg" alt="" />
+            </a>
+            <div class="overlay">
+              <h3>Proyecto</h3>
+              <p>Tipo de proyecto</p>
+              <a
+                href="https://www.figma.com/proto/Cyqn4z7Fy8rg16Hpbtihvp/Luis-Amigo"
+                target="_blank"
+                class="boton-imagen"
+                >Ver más</a
+              >
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <a
+              href="https://www.figma.com/proto/Cyqn4z7Fy8rg16Hpbtihvp/Luis-Amigo"
+              target="_blank"
+            >
+              <img src="img/p5.jpg" alt="" />
+            </a>
+            <div class="overlay">
+              <h3>Proyecto</h3>
+              <p>Tipo de proyecto</p>
+              <a
+                href="https://www.figma.com/proto/Cyqn4z7Fy8rg16Hpbtihvp/Luis-Amigo"
+                target="_blank"
+                class="boton-imagen"
+                >Ver más</a
+              >
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <a
+              href="https://www.figma.com/proto/Cyqn4z7Fy8rg16Hpbtihvp/Luis-Amigo"
+              target="_blank"
+            >
+              <img src="img/p5.jpg" alt="" />
+            </a>
+            <div class="overlay">
+              <h3>Proyecto</h3>
+              <p>Tipo de proyecto</p>
+              <a
+                href="https://www.figma.com/proto/Cyqn4z7Fy8rg16Hpbtihvp/Luis-Amigo"
+                target="_blank"
+                class="boton-imagen"
+                >Ver más</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+            <form id="miFormulario">
+              <input type="text" id="nombre" placeholder="Tú Nombre" />
+              <input
+                type="text"
+                id="telefono"
+                placeholder="Número telefónico"
+              />
+              <input
+                type="text"
+                id="correo"
+                placeholder="Dirección de correo"
+              />
+              <input type="text" id="tema" placeholder="Tema" />
+              <textarea
+                id="mensaje"
+                cols="30"
+                rows="10"
+                placeholder="Mensaje"
+              ></textarea>
+              <button
+                type="button"
+                onclick="enviarMensaje()"
+                class="boton-enviar"
+              >
+                Enviar Mensaje
+              </button>
+              <button
+                id="verMensajes"
+                type="button"
+                onclick="mostrarMensajes()"
+                class="boton-enviar"
+              >
+                Ver Mensajes
+              </button>
+            </form>
+          </div>
+          <!-- Mapa -->
+          <div class="col">
+            <img src="/img/hero.png" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Carrera 49 #53-46 Bello, Antioquia
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Llamame: 301 538 3935
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: colombia.develop@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a
+          target="_blank"
+          href="https://www.facebook.com/santiagosneyder.hoyosaraque?mibextid=LQQJ4d"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a target="_blank" href="https://wa.me/message/E5H34HRQUJPOM1"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a
+          target="_blank"
+          href="https://instagram.com/santiagosneyderhoyos?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/santiago-sneyder-hoyos-araque-6785b71b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
