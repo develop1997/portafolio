@@ -60,13 +60,13 @@ html{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
     url(img/fondo.jpg);
     background-size: cover;
-    height: 110vh;
+    height: 107vh;
     color: #fff;
     display: flex;
     align-items: center;
 }
 .inicio .contenido-banner{
-    padding: 10px;
+    padding: 5px;
     background-color: #1e2326;
     max-width: 350px;
     margin: auto;
@@ -97,9 +97,6 @@ html{
     }
 }
 
-
-
-
 .contenido-banner::after {
     content: '';
     position: absolute;
@@ -111,9 +108,6 @@ html{
     z-index: -2;
 }
 
-
-
-
 .box
 {
     max-width: 400px;
@@ -124,13 +118,10 @@ html{
     border-radius: 15px;
 }
 
-
-
 .inicio .contenido-banner img{
     margin-top: 40px;
     border: 3px solid #1CB698;
-    
-    width: 80%;
+    width: 70%;
     margin: auto;
     border-radius: 100%;
 }
