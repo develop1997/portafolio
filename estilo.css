@@ -66,17 +66,70 @@ html{
     align-items: center;
 }
 .inicio .contenido-banner{
-    padding: 20px;
+    padding: 10px;
     background-color: #1e2326;
     max-width: 350px;
     margin: auto;
     text-align: center;
-    border-radius: 40px;
+    position: relative; /* Necesario para los pseudo-elementos */
+    background: repeating-conic-gradient(from var(--a), #cecece 0%, #cecece 5%, transparent 5%, transparent 40%, #cecece 50%);
+    animation: animate 8s linear infinite;
+    border-radius: 15px;
+    z-index: 1;
 }
+
+@property --a 
+{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes animate 
+{
+    0% 
+    {
+        --a: 0deg;
+    }
+    100% 
+    {
+        --a: 360deg;
+    }
+}
+
+
+
+
+.contenido-banner::after {
+    content: '';
+    position: absolute;
+    inset: 0px;
+    background: repeating-conic-gradient(from var(--a), #1CB698 0%, #1CB698 5%, transparent 5%, transparent 40%, #1CB698 50%);
+    animation: animate 8s linear infinite;
+    animation-delay: 6s;
+    border-radius: 15px;
+    z-index: -2;
+}
+
+
+
+
+.box
+{
+    max-width: 400px;
+    margin: auto;
+    position: relative;
+    background-color: #1e2326;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+
+
 .inicio .contenido-banner img{
     margin-top: 40px;
-    border: 10px solid #1CB698;
-    display: block;
+    border: 3px solid #1CB698;
+    
     width: 80%;
     margin: auto;
     border-radius: 100%;
