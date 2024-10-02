@@ -68,7 +68,8 @@ html{
 .inicio .contenido-banner{
     padding: 5px;
     background-color: #1e2326;
-    max-width: 350px;
+    max-width: 300px;
+    height: auto;
     margin: auto;
     text-align: center;
     position: relative; /* Necesario para los pseudo-elementos */
@@ -77,6 +78,33 @@ html{
     border-radius: 15px;
     z-index: 1;
 }
+
+@media (max-width: 576px) {
+    .inicio {
+        height: 100vh;
+        display: block;
+    }
+    
+    .inicio .contenido-banner {
+        max-width: 95%; /* Más ancho en pantallas pequeñas */
+        padding: 10px;
+    }
+    
+    .inicio .contenido-banner img {
+        width: 80%; /* Ajusta el tamaño de la imagen */
+    }
+    
+    .box {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .inicio .contenido-banner {
+        max-width: 400px; /* Aumenta el ancho para pantallas grandes */
+    }
+}
+
 
 @property --a 
 {
